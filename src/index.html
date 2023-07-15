@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-y-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/vite.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./global.css" />
+    <!-- FontAwesom 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ! jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      [x-cloak] {
+        display: none;
+      }
+      body {
+        background-size: 100%;
+      }
+    </style>
+
+    <title>TechMarrow Landing page | Homepage</title>
+  </head>
+  <body
+    class="min-h-screen bg-black text-white bg-[url('/assets/background.png')] bg-no-repeat bg-top flex flex-col overflow-y-hidden"
+  >
+    <nav
+      class="flex justify-between items-center px-4 py-2 md:px-16 md:py-6 lg:px-[120px] lg:py-8"
+    >
+      <div class="">
+        <a href="/">
+          <img
+            class="h-[30px] object-contain"
+            src="/assets/Logo.png"
+            alt="logo"
+          />
+        </a>
+      </div>
+
+      <ul class="flex gap-10">
+        <a
+          href="/"
+          class="text-sm hover:text-primary transition-all duration-200"
+        >
+          Home
+        </a>
+        <a
+          href="/"
+          class="text-sm hover:text-primary transition-all duration-200"
+        >
+          Privacy
+        </a>
+        <a
+          href="/"
+          class="text-sm hover:text-primary transition-all duration-200"
+        >
+          About
+        </a>
+      </ul>
+
+      <ul class="flex justify-center items-center gap-6">
+        <a
+          href="/"
+          class="text-sm hover:text-primary transition-all duration-200"
+        >
+          Contact
+        </a>
+        <a
+          href="/"
+          class="tracking-wide text-sm bg-primary px-4 py-2.5 rounded-3xl text-secondary font-semibold"
+        >
+          Services
+        </a>
+      </ul>
+    </nav>
+
+    <main class="flex flex-col flex-1">
+      <h1
+        class="mt-10 mb-[60px] text-xl px-20 md:px-4 md:text-3xl lg:text-4xl lg:leading-[48px] text-center font-semibold"
+      >
+        Unlock the power of innovation with
+        <span class="text-primary font-bold mr-0.5">{</span>TechMarrow<span
+          class="text-primary font-bold ml-0.5"
+          >}</span
+        >,
+        <br />
+        <span class="text-primary">the dynamic dev team</span> that breathes
+        life into your digital dreams.
+      </h1>
+
+      <div class="flex justify-center items-center gap-x-4">
+        <a
+          href="/"
+          class="tracking-wide text-base bg-primary px-12 py-3 rounded-3xl text-secondary font-semibold"
+        >
+          Services
+        </a>
+
+        <a
+          href="/"
+          class="tracking-wide text-base border-white border-2 px-12 py-3 rounded-3xl text-white font-semibold"
+        >
+          Contact
+        </a>
+      </div>
+
+      <div class="flex flex-1 items-end justify-center px-[120px] mt-4">
+        <img
+          class="w-full md:max-w-xl lg:max-w-2xl object-contain"
+          src="/assets/earth.png"
+          alt="earth"
+        />
+      </div>
+    </main>
+
+    <footer
+      class="fixed bottom-0 w-full px-[120px] py-10 bg-black bg-opacity-60 backdrop-blur-md border-t-2 border-t-white border-opacity-30"
+    >
+      <p x-data="{start_year: '2023'}" class="text-sm text-center font-medium">
+        Copyright &copy;
+        <span
+          x-text="new Date().getFullYear() === start_year ? new Date().getFullYear() : start_year+' - '+new Date().getFullYear()"
+        ></span>
+        · All rights reserved to
+        <a
+          href="/"
+          class="font-semibold text-[#6effe2] hover:text-primary transition-all duration-200 ease-in-out"
+        >
+          TechMarrow Team </a
+        >.
+      </p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
